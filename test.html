@@ -15,29 +15,26 @@
             margin-bottom: 20px;
         }
         .button-container button {
-            margin-bottom: 10px;
-            width: 30%; /* Ensure buttons stay the same size */
+            margin-bottom: 5px;
+            width: 40%; /* Ensure buttons stay the same size */
         }
         .gif-container {
-            position: relative;
+            position: center;
             text-align: center;
+            width: 100%;
+            height: 100%;
         }
-        .gif-container img {
-            max-width: 100%;
+
+    
+        .arrow-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
         }
         .arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
             font-size: 2rem;
             color: #333;
             cursor: pointer;
-        }
-        .arrow-left {
-            left: 10px;
-        }
-        .arrow-right {
-            right: 10px;
         }
     </style>
 </head>
@@ -48,7 +45,8 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="row">
-                    <div class="col-8">
+                    <!-- Adjusted the column sizes: col-4 for left container and col-8 for right container -->
+                    <div class="col-7">
                         <div class="logo-container">
                             <img src="images/companyLogo.png" alt="Company Logo" class="img-fluid">
                             <div class="button-container">
@@ -56,15 +54,17 @@
                                 <button class="login100-form-btn">WHY US?</button>
                                 <button class="login100-form-btn">LOCATIONS</button>
                                 <button class="login100-form-btn">STORE</button>
-                                <button class="login100-form-btn">LOGIN or SIGN UP</button>
+                                <button class="login100-form-btn">LOGIN OR SIGN UP</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5">
                         <div class="gif-container">
-                            <span class="arrow arrow-left" onclick="prevImage()">◀</span>
                             <img id="gif-image" src="images/deadlift1.jpg" alt="GIF" class="img-fluid">
-                            <span class="arrow arrow-right" onclick="nextImage()">▶</span>
+                        </div>
+                        <div class="arrow-container">
+                            <span class="arrow" onclick="prevImage()">◀</span>
+                            <span class="arrow" onclick="nextImage()">▶</span>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
             'images/deadlift1.jpg',
             'images/deadlift2.jpg',
             'images/deadlift3.jpg',
-
+            'images/deadlift4.jpg',
         ];
         let currentIndex = 0;
 
