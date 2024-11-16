@@ -462,3 +462,75 @@ iframe {
   margin: 0 auto;
   padding-bottom: 20px;
 }
+
+/* Add padding to buttons */
+.button-container button {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px 25px;  /* Adjust the padding as needed */
+}
+
+/* Resize company logo */
+.logo-container img {
+  max-width: 100px;  /* Adjust the max-width as needed */
+  margin-bottom: 100px;
+}
+
+/* Style arrows for changing images */
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Maintain consistency with the login page */
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login100 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.wrap-login100 {
+  width: 960px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 50px 85px 50px;
+}
+
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Ensure no overflow */
+  border-radius: 15px; /* Optional: matches the container's rounded corners */
+
+  /* Ensure the image fills the container proportionally */
+.gif-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}

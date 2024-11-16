@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Homepage</title>
     <meta charset="UTF-8">
@@ -9,70 +8,45 @@
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <style>
-        .logo-container img {
-            max-width: 150px; 
-            margin-bottom: 20px;
-        }
-        .button-container button {
-            margin-bottom: 10px;
-            width: 50%;
-        }
-        .gif-container {
-            position: relative;
-            text-align: center;
-            width: 100%;
-            height: 100%;
-        }
-        .gif-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .arrow-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-        }
-        .arrow {
-            font-size: 2rem;
-            color: #333;
-            cursor: pointer;
-        }
-    </style>
 </head>
-
 <body>
-
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="row">
-                    <div class="col">
+                    
+                    <div class="col-4">
+                        <div class="company-name">Juniper Gyms</div>
                         <div class="logo-container">
-                            <img src="images/companyLogo.png" alt="Company Logo" class="img-fluid">
-                            <div class="button-container">
-                                <button class="login100-form-btn">WHO ARE WE?</button>
-                                <button class="login100-form-btn">WHY US?</button>
-                                <button class="login100-form-btn">LOCATIONS</button>
-                                <button class="login100-form-btn">STORE</button>
-                                <button class="login100-form-btn" onclick="window.location.href='login.html'">LOGIN OR SIGN UP</button>                            </div>
+                            <img src="images/companyLogo.png" alt="Company Logo" class="img-fluid" style="max-width: 150px;">
+                        </div>
+                        <div class="button-container">
+                            <button class="login100-form-btn">WHO ARE WE?</button>
+                            <button class="login100-form-btn">WHY US?</button>
+                            <button class="login100-form-btn">LOCATIONS</button>
+                            <button class="login100-form-btn">STORE</button>
+                            <button class="login100-form-btn" onclick="window.location.href='memberships.html'">MEMBERSHIP</button>
+                            <button class="login100-form-btn" onclick="window.location.href='login.html'">LOGIN OR SIGN UP</button>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="gif-container">
+
+
+                    <div class="col-8">
+                        <div class="gif-container lottie-container" id="gif-animation" data-tilt>
                             <img id="gif-image" src="images/deadlift1.jpg" alt="GIF" class="img-fluid">
+                            
                         </div>
                         <div class="arrow-container">
                             <span class="arrow" onclick="prevImage()">◀</span>
                             <span class="arrow" onclick="nextImage()">▶</span>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
     </div>
-
+    
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="vendor/bootstrap/js/popper.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -80,28 +54,38 @@
     <script src="js/main.js"></script>
     <script>
         const images = [
-            'images/deadlift1.jpg',
-            'images/deadlift2.jpg',
-            'images/deadlift3.jpg',
-            'images/deadlift4.jpg',
-        ];
-        let currentIndex = 0;
+    'images/deadlift1.jpg',
+    'images/deadlift2.jpg',
+    'images/deadlift3.jpg',
+    'images/deadlift4.jpg',
+];
+let currentIndex = 0;
 
-        function showImage(index) {
-            const imgElement = document.getElementById('gif-image');
-            imgElement.src = images[index];
-        }
+function showImage(index) {
+    const imgElement = document.getElementById('gif-image');
+    imgElement.src = images[index];
+}
 
-        function prevImage() {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-            showImage(currentIndex);
-        }
+function prevImage() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+    showImage(currentIndex);
+}
 
-        function nextImage() {
-            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-            showImage(currentIndex);
-        }
+function nextImage() {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+    showImage(currentIndex);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    lottie.loadAnimation({
+        container: document.getElementById('gif-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'vendor/lottie/homepage.json'
+    });
+});
+
     </script>
 </body>
-
 </html>
