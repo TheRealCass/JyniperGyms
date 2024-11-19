@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../images/icons/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <span class="login100-form-title">Store</span>
+
+
+
+            
+            <div class="row">
+                <div class="col-4">
+                    
+                </div>
+                <div class="col-8">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="../vendor/bootstrap/js/popper.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../vendor/lottie/lottie.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    const products = [
+        '../images/product1.jpg',
+        '../images/product2.jpg',
+        '../images/product3.jpg',
+        '../images/product4.jpg',
+    ];
+    let currentProductIndex = 0;
+
+    function showProduct(index) {
+        const imgElement = document.querySelector('.product-display img');
+        imgElement.src = products[index];
+    }
+
+    function prevImage() {
+        currentProductIndex = (currentProductIndex > 0) ? currentProductIndex - 1 : products.length - 1;
+        showProduct(currentProductIndex);
+    }
+
+    function nextImage() {
+        currentProductIndex = (currentProductIndex < products.length - 1) ? currentProductIndex + 1 : 0;
+        showProduct(currentProductIndex);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-animation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '../vendor/lottie/store.json'
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -28,6 +28,9 @@
             margin: 10px;
             min-width: 250px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .membership-tier img {
             width: 100%;
@@ -41,9 +44,15 @@
         .membership-tier ul {
             list-style-type: none;
             padding: 0;
+            flex-grow: 1;
         }
         .membership-tier ul li {
             margin-bottom: 10px;
+        }
+        .membership-tier .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -63,6 +72,7 @@
                                 <li>Free group classes</li>
                                 <li>Locker room access</li>
                             </ul>
+                            <div class="price">$29.99/month</div>
                         </div>
                         <div class="membership-tier">
                             <img src="../images/teir2.jpg" alt="Premium Membership">
@@ -73,6 +83,7 @@
                                 <li>Personal training sessions</li>
                                 <li>Sauna and steam room access</li>
                             </ul>
+                            <div class="price">$49.99/month</div>
                         </div>
                         <div class="membership-tier">
                             <img src="../images/teir3.jpg" alt="VIP Membership">
@@ -84,6 +95,7 @@
                                 <li>Priority class booking</li>
                                 <li>Exclusive VIP lounge access</li>
                             </ul>
+                            <div class="price">$79.99/month</div>
                         </div>
                     </div>
                 </div>

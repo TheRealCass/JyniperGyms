@@ -14,6 +14,7 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="company-name">Juniper  Gyms</div>
+                <div class="accountCartTotal">accountCartTotal</div>
                 <div class="row">
                     <div class="col-4">
                         <div class="logo-container">
@@ -49,37 +50,37 @@
     <script src="../js/main.js"></script>
     <script>
         const images = [
-    '../images/deadlift1.jpg',
-    '../images/deadlift2.jpg',
-    '../images/deadlift3.jpg',
-    '../images/deadlift4.jpg',
-];
-let currentIndex = 0;
+        '../images/deadlift1.jpg',
+        '../images/deadlift2.jpg',
+        '../images/deadlift3.jpg',
+        '../images/deadlift4.jpg',
+        ];
+        let currentIndex = 0;
 
-function showImage(index) {
-    const imgElement = document.getElementById('gif-image');
-    imgElement.src = images[index];
-}
+        function showImage(index) {
+            const imgElement = document.getElementById('gif-image');
+            imgElement.src = images[index];
+        }
 
-function prevImage() {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-    showImage(currentIndex);
-}
+        function prevImage() {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            showImage(currentIndex);
+        }
 
-function nextImage() {
-    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-    showImage(currentIndex);
-}
+        function nextImage() {
+            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+            showImage(currentIndex);
+        }
 
-document.addEventListener("DOMContentLoaded", function () {
-    lottie.loadAnimation({
-        container: document.getElementById('gif-animation'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: '../vendor/lottie/homepage.json'
-    });
-});
+        document.addEventListener("DOMContentLoaded", function () {
+            lottie.loadAnimation({
+                container: document.getElementById('gif-animation'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: '../vendor/lottie/homepage.json'
+            });
+        });
 
     </script>
 </body>
