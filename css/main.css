@@ -538,9 +538,9 @@ iframe {
 /* Style the company name */
 .company-name {
   font-family: 'Poppins-Bold', sans-serif;
-  font-size: 40px; /* Increase the font size */
+  font-size: 45px; /* Increase the font size */
   color: #570163;
   text-align: center;
-  margin-bottom: 30px; /* Add some space below the name */
+  margin-bottom: 50px; /* Add some space below the name */
   letter-spacing: 40px; /* Spread out the letters */
 }
