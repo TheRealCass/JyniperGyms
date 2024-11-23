@@ -520,6 +520,17 @@ iframe {
   padding: 100px 50px 85px 50px;
 }
 
+.wrap-login100-2 {
+  width: 960px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 100px 50px 85px 50px;
+}
+
 .gif-container {
   display: flex;
   justify-content: center;
@@ -545,4 +556,16 @@ iframe {
   text-align: center;
   margin-bottom: 30px; /* Add some space below the name */
   letter-spacing: 0px; /* Spread out the letters */
+}
+
+.back-to-homepage-button{
+  position: absolute; /* Position it relative to its parent container */
+  top: 10px; /* Adjust the distance from the top of the container */
+  left: 10px; /* Adjust the distance from the left of the container */
+  font-family: 'Poppins-Bold', sans-serif; /* Maintain consistency with other styles */
+  font-size: 16px;
+  color: #666666;
+  text-decoration: none; /* Remove underline */
+  transition: all 0.4s; /* Smooth hover effect */
+
 }
