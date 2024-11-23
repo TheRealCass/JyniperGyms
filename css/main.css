@@ -473,8 +473,8 @@ iframe {
 /* Resize company logo */
 .logo-container img {
   max-width: 200px;  /* Adjust the max-width as needed */
-  margin-bottom: 25px;
-  margin-left: 25px;
+  margin-bottom: 40px;
+  margin-left: 15px;
 }
 
 /* Style arrows for changing images */
