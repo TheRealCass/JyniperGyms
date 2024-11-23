@@ -473,14 +473,15 @@ iframe {
 /* Resize company logo */
 .logo-container img {
   max-width: 200px;  /* Adjust the max-width as needed */
-  margin-bottom: 100px;
+  margin-bottom: 25px;
+  margin-left: 25px;
 }
 
 /* Style arrows for changing images */
 .arrow-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .arrow {
@@ -531,7 +532,8 @@ iframe {
   /* Ensure the image fills the container proportionally */
 .gif-container img {
   width: 100%;
-  height: 100%;
+  height: 110%;
+  border-radius: 15px;
   object-fit: cover; 
 }
 
@@ -541,6 +543,6 @@ iframe {
   font-size: 45px; /* Increase the font size */
   color: #570163;
   text-align: center;
-  margin-bottom: 50px; /* Add some space below the name */
-  letter-spacing: 40px; /* Spread out the letters */
+  margin-bottom: 30px; /* Add some space below the name */
+  letter-spacing: 0px; /* Spread out the letters */
 }
