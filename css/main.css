@@ -3,78 +3,86 @@
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  src: url("../fonts/poppins/Poppins-Bold.ttf");
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  src: url("../fonts/poppins/Poppins-Medium.ttf");
 }
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body, html {
-	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+body,
+html {
+  height: 100%;
+  font-family: Poppins-Regular, sans-serif;
+  position: relative;
+  transition: 0.5s;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
 }
 
 a:focus {
-	outline: none !important;
+  outline: none !important;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
   color: #5f5dfc;
 }
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
 }
 
 p {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
 }
 
-ul, li {
-	margin: 0px;
-	list-style-type: none;
+ul,
+li {
+  margin: 0px;
+  list-style-type: none;
 }
-
 
 /*---------------------------------------------*/
 input {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
 }
 
 textarea {
@@ -82,45 +90,77 @@ textarea {
   border: none;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   border-color: transparent !important;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
 
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
 
-input::-webkit-input-placeholder { color: #999999; }
-input:-moz-placeholder { color: #999999; }
-input::-moz-placeholder { color: #999999; }
-input:-ms-input-placeholder { color: #999999; }
+input::-webkit-input-placeholder {
+  color: #999999;
+}
+input:-moz-placeholder {
+  color: #999999;
+}
+input::-moz-placeholder {
+  color: #999999;
+}
+input:-ms-input-placeholder {
+  color: #999999;
+}
 
-textarea::-webkit-input-placeholder { color: #999999; }
-textarea:-moz-placeholder { color: #999999; }
-textarea::-moz-placeholder { color: #999999; }
-textarea:-ms-input-placeholder { color: #999999; }
+textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+textarea:-moz-placeholder {
+  color: #999999;
+}
+textarea::-moz-placeholder {
+  color: #999999;
+}
+textarea:-ms-input-placeholder {
+  color: #999999;
+}
 
 /*---------------------------------------------*/
 button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 iframe {
-	border: none !important;
+  border: none !important;
 }
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
@@ -138,7 +178,6 @@ iframe {
   color: #666666;
 }
 
-
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
 
@@ -148,7 +187,7 @@ iframe {
 }
 
 .container-login100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -192,7 +231,6 @@ iframe {
   max-width: 100%;
 }
 
-
 /*------------------------------------------------------------------
 [  ]*/
 .login100-form {
@@ -210,7 +248,6 @@ iframe {
   display: block;
   padding-bottom: 25px;
 }
-
 
 /*---------------------------------------------*/
 .wrap-input100 {
@@ -233,7 +270,6 @@ iframe {
   border-radius: 25px;
   padding: 0 30px 0 68px;
 }
-
 
 /*------------------------------------------------------------------
 [ Focus ]*/
@@ -321,7 +357,7 @@ iframe {
   text-transform: uppercase;
 
   width: 100%;
-  height: 50px;
+  height: 35px;
   border-radius: 25px;
   background: #5f5dfc;
   display: -webkit-box;
@@ -343,12 +379,8 @@ iframe {
   background: #333333;
 }
 
-
-
 /*------------------------------------------------------------------
 [ Responsive ]*/
-
-
 
 @media (max-width: 992px) {
   .wrap-login100 {
@@ -383,7 +415,6 @@ iframe {
     padding: 100px 15px 33px 15px;
   }
 }
-
 
 /*------------------------------------------------------------------
 [ Alert validate ]*/
@@ -452,7 +483,6 @@ iframe {
   }
 }
 
-
 /*------------------------------------------------------------------
 [ Lottie ]*/
 
@@ -467,12 +497,12 @@ iframe {
 .button-container button {
   margin-bottom: 10px;
   width: 100%;
-  padding: 10px 25px;  /* Adjust the padding as needed */
+  padding: 10px 25px; /* Adjust the padding as needed */
 }
 
 /* Resize company logo */
 .logo-container img {
-  max-width: 200px;  /* Adjust the max-width as needed */
+  max-width: 200px; /* Adjust the max-width as needed */
   margin-bottom: 100px;
 }
 
@@ -528,19 +558,232 @@ iframe {
   overflow: hidden; /* Ensure no overflow */
   border-radius: 15px; /* Optional: matches the container's rounded corners */
 }
-  /* Ensure the image fills the container proportionally */
+/* Ensure the image fills the container proportionally */
 .gif-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 /* Style the company name */
 .company-name {
-  font-family: 'Poppins-Bold', sans-serif;
+  font-family: "Poppins-Bold", sans-serif;
   font-size: 45px; /* Increase the font size */
   color: #570163;
   text-align: center;
   margin-bottom: 50px; /* Add some space below the name */
   letter-spacing: 40px; /* Spread out the letters */
+}
+
+/* Navbar */
+.header {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: white;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.header_toggle {
+  color: purple;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.header_img {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header_img img {
+  width: 40px;
+}
+.left-navbar {
+  position: fixed;
+  top: 0;
+  /* left: -30%; */
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  padding: auto;
+  transition: 0.5s;
+  z-index: 1000;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.nav-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.nav_logo,
+.nav_link {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 1rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+.nav_logo {
+  margin-bottom: 2rem;
+}
+.nav_logo-icon {
+  font-size: 1.25rem;
+  color: white;
+}
+.nav_logo-name {
+  color: white;
+  font-weight: 700;
+}
+.nav_link {
+  position: relative;
+  color: var(--first-color-light);
+  margin-bottom: 0.2rem;
+  transition: 0.3s;
+}
+.nav_link:hover {
+  color: white;
+}
+.nav_icon {
+  font-size: 1.25rem;
+}
+.nav-show {
+  left: 0;
+}
+.active {
+  color: white;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 32px;
+  background-color: white;
+}
+.height-100 {
+  height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: calc(3rem + 1rem);
+    padding: 0 2rem 0 calc(65px + 2rem);
+  }
+  .header_img {
+    width: 40px;
+    height: 40px;
+  }
+  .header_img img {
+    width: 45px;
+  }
+  .l-navbar {
+    left: 0;
+    padding: 1rem 1rem 0 0;
+  }
+  .nav-show {
+    width: calc(65px + 156px);
+  }
+}
+
+/* Product Listing Slider */
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  padding: 0 15px;
+}
+
+.owl-nav button {
+  pointer-events: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.owl-nav button:hover {
+  background: #fff !important;
+}
+
+.owl-nav button span {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.product-image {
+  height: 100%;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-btn {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover .overlay-btn {
+  bottom: 0;
+}
+
+/* cart */
+.cart-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item-image {
+  border-radius: 4px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls button {
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+}
+
+.cart-total {
+  font-weight: 500;
+}
+
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
