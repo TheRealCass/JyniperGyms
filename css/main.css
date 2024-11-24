@@ -206,7 +206,7 @@ iframe {
   line-height: 1.2;
   text-align: center;
 
-  width: 105%;
+  width: 100%;
   display: block;
   padding-bottom: 25px;
 }
@@ -473,15 +473,14 @@ iframe {
 /* Resize company logo */
 .logo-container img {
   max-width: 200px;  /* Adjust the max-width as needed */
-  margin-bottom: 40px;
-  margin-left: 15px;
+  margin-bottom: 100px;
 }
 
 /* Style arrows for changing images */
 .arrow-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .arrow {
@@ -520,17 +519,6 @@ iframe {
   padding: 100px 50px 85px 50px;
 }
 
-.wrap-login100-2 {
-  width: 960px;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 100px 50px 85px 50px;
-}
-
 .gif-container {
   display: flex;
   justify-content: center;
@@ -543,8 +531,7 @@ iframe {
   /* Ensure the image fills the container proportionally */
 .gif-container img {
   width: 100%;
-  height: 110%;
-  border-radius: 15px;
+  height: 100%;
   object-fit: cover; 
 }
 
@@ -554,18 +541,6 @@ iframe {
   font-size: 45px; /* Increase the font size */
   color: #570163;
   text-align: center;
-  margin-bottom: 30px; /* Add some space below the name */
-  letter-spacing: 0px; /* Spread out the letters */
-}
-
-.back-to-homepage-button{
-  position: absolute; /* Position it relative to its parent container */
-  top: 10px; /* Adjust the distance from the top of the container */
-  left: 10px; /* Adjust the distance from the left of the container */
-  font-family: 'Poppins-Bold', sans-serif; /* Maintain consistency with other styles */
-  font-size: 16px;
-  color: #666666;
-  text-decoration: none; /* Remove underline */
-  transition: all 0.4s; /* Smooth hover effect */
-
+  margin-bottom: 50px; /* Add some space below the name */
+  letter-spacing: 40px; /* Spread out the letters */
 }
