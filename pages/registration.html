@@ -13,8 +13,28 @@
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
-                <span class="login100-form-title">Step 1: Create a account</span>
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register - Step 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../images/icons/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100-2">
+                <a class="back-to-homepage-button" href="index.html"> &#9668 <u>Back to Homepage</u></a>
                 <form class="login100-form validate-form">
+                    <span class="login100-form-title">Step 1: Create a account</span>
+                
+                <form class="login100-form validate-form">
+
+                    
                     
                     <span class="login100-form-title">Personal Info</span>
 
@@ -35,7 +55,7 @@
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate="Address is required">
-                        <input class="input100" type="text" name="address" placeholder="Street, City, State, Zip">
+                        <input class="input100" type="text" name="address" placeholder="Shipping Addre [Street, City, State, Zip]">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -54,35 +74,35 @@
                     
                     <span class="login100-form-title">Billing & Shipping </span>
 
-                    <div class="wrap-input100 validate-input" data-validate="Phone number is required">
-                        <input class="input100" type="text" name="phone" placeholder="Phone Number">
+                    <div class="wrap-input100 validate-input" data-validate="Address is required">
+                        <input class="input100" type="text" name="address" placeholder="Billing Address [City, State, Zip]">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
                         </span>
                     </div>
-
-                    <div class="wrap-input100 validate-input" data-validate="Email is required">
-                        <input class="input100" type="email" name="email" placeholder="Email">
+                    
+                    <div class="wrap-input100 validate-input" data-validate="Credit card number is required">
+                        <input class="input100" type="text" name="credit_card" placeholder="Credit Card Number">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
                         </span>
                     </div>
-
-                    <div class="wrap-input100 validate-input" data-validate="Emergency contact is required">
-                        <input class="input100" type="text" name="emergency_contact" placeholder="Emergency Contact">
+                    
+                    <div class="wrap-input100 validate-input" data-validate="Expiration date is required">
+                        <input class="input100" type="text" name="expiry_date" placeholder="Expiration Date (MM/YY)">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
-                            <i class="fa fa-address-book" aria-hidden="true"></i>
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
                         </span>
                     </div>
-
-                    <div class="wrap-input100 validate-input">
-                        <input class="input100" type="file" name="profile_picture" placeholder="Profile Picture">
+                    
+                    <div class="wrap-input100 validate-input" data-validate="CVV is required">
+                        <input class="input100" type="text" name="cvv" placeholder="CVV">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            <i class="fa fa-lock" aria-hidden="true"></i>
                         </span>
                     </div>
 
@@ -111,6 +131,36 @@
                             <i class="fa fa-address-book" aria-hidden="true"></i>
                         </span>
                     </div>
+
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" onclick="window.location.href='registrationstep2.html';return false;">
+                            Next
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../vendor/bootstrap/js/popper.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/lottie/lottie.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            lottie.loadAnimation({
+                container: document.getElementById('lottie-animation'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: '../vendor/lottie/registration.json'
+            });
+        });
+    </script>
+</body>
+</html>
+
 
 
                     <div class="container-login100-form-btn">
