@@ -205,6 +205,7 @@ iframe {
   background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
 
+
 .wrap-login100 {
   width: 960px;
   background: #fff;
@@ -493,16 +494,17 @@ iframe {
   padding-bottom: 20px;
 }
 
+
 /* Add padding to buttons */
 .button-container button {
   margin-bottom: 10px;
-  width: 100%;
-  padding: 10px 25px; /* Adjust the padding as needed */
+  width: 60%;
+  padding: 25px 10px; /* Adjust the padding as needed */
 }
 
 /* Resize company logo */
 .logo-container img {
-  max-width: 200px; /* Adjust the max-width as needed */
+  max-width: 150px; /* Adjust the max-width as needed */
   margin-bottom: 100px;
 }
 
@@ -786,4 +788,53 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+/* membership page */
+
+.membership-container {
+  padding: 20px;
+}
+.membership-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.membership-tier {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.membership-tier img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+.membership-tier h2 {
+  margin-bottom: 15px;
+}
+.membership-tier ul {
+  list-style-type: none;
+  padding: 0;
+  flex-grow: 1;
+}
+.membership-tier ul li {
+  margin-bottom: 10px;
+}
+.membership-tier .price {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 15px;
 }

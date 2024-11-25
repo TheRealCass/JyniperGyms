@@ -32,7 +32,7 @@
     <nav class="left-navbar" id="nav-bar">
         <div class="nav-main">
             <div>
-                <a href="#" class="nav_logo">
+                <a href="index.html" class="nav_logo">
                     <img class="img-fluid" width="50" src="../images/companyLogo.png" alt="Juniper Gyms Logo">
                     Juniper Gyms
                 </a>
@@ -43,6 +43,7 @@
                     <a href="#" class="nav_link">Locations</a>
                     <a href="store.html" class="nav_link">Store</a>
                     <a href="memberships.html" class="nav_link">Membership</a>
+                    <a href="login.html" class="nav_link">Login / Sign Up</a>
                 </div>
             </div>
         </div>
@@ -61,7 +62,7 @@
                                 <div class="card-body pb-0">
                                     <span class="text-secondary">Protein Shake</span>
                                     <a href="product.html">
-                                        <p class="text-primary mb-0">Protein Shake 01</p>
+                                        <p class="text-primary mb-0">WHEY protine</p>
                                     </a>
                                 </div>
                                 <div class="product-image">
@@ -224,6 +225,145 @@
                 </div>
             </div>
         </section>
+
+
+
+
+
+        <!-- Product Sections 2 -->
+        <section class="mt-5 p-1">
+            <div class="container mt-2">
+                <div class="row">
+                    <h2 class="mb-4">Energy Drinks</h2>
+                    <div class="owl-carousel owl-theme">
+                        <!-- Product 4 -->
+                        <div class="item">
+                            <div class="card product-card">
+                                <div class="card-body pb-0">
+                                    <span class="text-secondary">Energy Drink</span>
+                                    <a href="product.html">
+                                        <p class="text-primary mb-0">Energiser 3500</p>
+                                    </a>
+                                </div>
+                                <div class="product-image">
+                                    <img src="../images/product1.jpg" class="card-img-top" alt="Protein Shake">
+                                </div>
+                                <div class="card-body py-1">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5 class="text-danger m-0">$7.00</h5>
+                                            <small class="text-secondary"><del>$8.40</del></small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="d-flex align-items-center">
+                                                <div class="input-group input-group-sm me-2"
+                                                    style="width: 100px;display: none;">
+                                                    <button class="btn btn-outline-secondary" type="button"
+                                                        onclick="updateQuantity('product-4', -1)">-</button>
+                                                    <input type="number" class="form-control text-center" id="product-4"
+                                                        value="1" min="1" max="99" readonly>
+                                                    <button class="btn btn-outline-secondary" type="button"
+                                                        onclick="updateQuantity('product-4', 1)">+</button>
+                                                </div>
+                                                <button class="btn btn-secondary btn-circle"
+                                                    onclick="addToCart(1, 'Energiser 3500', 7, '../images/product1.jpg', 'product-4')">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+
+                       
+
+
+                        <!-- Additional product cards here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Product Sections 3 -->
+        <section class="mt-5 p-1">
+            <div class="container mt-2">
+                <div class="row">
+                    <h2 class="mb-4">Protine</h2>
+                    <div class="owl-carousel owl-theme">
+                        <!-- Product 4 -->
+                        <div class="item">
+                            <div class="card product-card">
+                                <div class="card-body pb-0">
+                                    <span class="text-secondary">Energy Drink</span>
+                                    <a href="product.html">
+                                        <p class="text-primary mb-0">Energiser 3500</p>
+                                    </a>
+                                </div>
+                                <div class="product-image">
+                                    <img src="../images/product1.jpg" class="card-img-top" alt="Protein Shake">
+                                </div>
+                                <div class="card-body py-1">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5 class="text-danger m-0">$7.00</h5>
+                                            <small class="text-secondary"><del>$8.40</del></small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="d-flex align-items-center">
+                                                <div class="input-group input-group-sm me-2"
+                                                    style="width: 100px;display: none;">
+                                                    <button class="btn btn-outline-secondary" type="button"
+                                                        onclick="updateQuantity('product-4', -1)">-</button>
+                                                    <input type="number" class="form-control text-center" id="product-4"
+                                                        value="1" min="1" max="99" readonly>
+                                                    <button class="btn btn-outline-secondary" type="button"
+                                                        onclick="updateQuantity('product-4', 1)">+</button>
+                                                </div>
+                                                <button class="btn btn-secondary btn-circle"
+                                                    onclick="addToCart(1, 'Energiser 3500', 7, '../images/product1.jpg', 'product-4')">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+
+                       
+
+
+                        <!-- Additional product cards here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- Cart Offcanvas -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
