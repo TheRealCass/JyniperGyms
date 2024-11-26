@@ -571,7 +571,18 @@ iframe {
   color: #666666;
   text-decoration: none; /* Remove underline */
   transition: all 0.4s; /* Smooth hover effect */
+}
 
+.back-to-memberships-button{
+ 
+  top: 10px; /* Adjust the distance from the top of the container */
+  left: 10px; /* Adjust the distance from the left of the container */
+  font-family: 'Poppins-Bold', sans-serif; /* Maintain consistency with other styles */
+  font-size: 15px;
+  color: #666666;
+  text-decoration: none; /* Remove underline */
+  transition: all 0.4s; /* Smooth hover effect */
+  margin-right: 25px;
 }
 
 
