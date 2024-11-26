@@ -562,7 +562,7 @@ iframe {
   letter-spacing: 0px; /* Spread out the letters */
 }
 
-.back-to-homepage-button{
+.top-left-button{
   position: absolute; /* Position it relative to its parent container */
   top: 10px; /* Adjust the distance from the top of the container */
   left: 10px; /* Adjust the distance from the left of the container */
@@ -574,7 +574,6 @@ iframe {
 }
 
 .back-to-memberships-button{
- 
   top: 10px; /* Adjust the distance from the top of the container */
   left: 10px; /* Adjust the distance from the left of the container */
   font-family: 'Poppins-Bold', sans-serif; /* Maintain consistency with other styles */
@@ -585,6 +584,31 @@ iframe {
   margin-right: 25px;
 }
 
+.top-right-button{
+  position:absolute;
+  top: 10px; /* Adjust the distance from the top of the container */
+  right: 10px; /* Adjust the distance from the left of the container */
+  font-family: 'Poppins-Bold', sans-serif; /* Maintain consistency with other styles */
+  font-size: 15px;
+  color: #666666;
+  text-decoration: none; /* Remove underline */
+  transition: all 0.4s; /* Smooth hover effect */
+  margin-right: 25px;
+}
+
+.center-button{
+  position: absolute; /* Position it relative to the parent container */
+  top: 3.2%; /* Move it to the vertical center */
+  left: 50%; /* Move it to the horizontal center */
+  transform: translate(-50%, -50%); /* Center it exactly */
+  font-family: 'Poppins-Bold', sans-serif; /* Consistent style */
+  font-size: 16px; /* Adjust font size */
+  color: #666666; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Padding for the button */
+  transition: all 0.3s ease; /* Hover effect */
+  z-index: 10; /* Ensure it stays on top */
+}
 
 .membership-container {
   padding: 20px;
