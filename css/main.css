@@ -126,9 +126,10 @@ iframe {
 [ Utility ]*/
 .txt1 {
   font-family: Poppins-Regular;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5;
-  color: #999999;
+  color: #5e5b5b;
+  line-height: 3px;
 }
 
 .txt2 {
@@ -205,10 +206,14 @@ iframe {
   color: #333333;
   line-height: 1.2;
   text-align: center;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   width: 105%;
   display: block;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 
@@ -497,6 +502,7 @@ iframe {
 }
 
 .container-login100 {
+  
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -569,3 +575,51 @@ iframe {
   transition: all 0.4s; /* Smooth hover effect */
 
 }
+<<<<<<< Updated upstream
+=======
+
+.membership-container {
+  padding: 20px;
+}
+.membership-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.membership-tier {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.membership-tier img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+.membership-tier h2 {
+  margin-bottom: 15px;
+}
+.membership-tier ul {
+  list-style-type: none;
+  padding: 0;
+  flex-grow: 1;
+}
+.membership-tier ul li {
+  margin-bottom: 10px;
+}
+.membership-tier .price {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 15px;
+}
+>>>>>>> Stashed changes
