@@ -10,45 +10,34 @@
     <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/memberships.css">
-
 </head>
 
 <body>
-
     <div class="limiter">
         <div class="container-login100">
-            
             <div class="wrap-login100">
-
-
                 <a class="back-to-homepage-button" href="index.html"> &#9668 <u>Back to Homepage</u></a>
-
 
                 <!-- Split dropleft button -->
                 <div class="btn-group">
                     <div class="btn-group dropleft" role="group">
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="sr-only">Toggle Dropleft</span>
-                    </button>
-                    <div class="dropdown-menu">
-                    <button class="dropdown-item" type="button">Weeky</button>
-                      <button class="dropdown-item" type="button">Monthly</button>
-                      <button class="dropdown-item" type="button">Yearly</button>
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropleft</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <button id="weekly" class="dropdown-item" type="button">Weekly</button>
+                            <button id="monthly" class="dropdown-item" type="button">Monthly</button>
+                            <button id="yearly" class="dropdown-item" type="button">Yearly</button>
+                        </div>
                     </div>
-                    </div>
-                    <button type="button" class="btn btn-secondary">
+                    <button id="billing-cycle-btn" type="button" class="btn btn-secondary">
                         Billing Cycle
-                        
                     </button>
                 </div>
-                
-                <div class="membership-container">
-                    
-                    
-                    
 
+                <div class="membership-container">
                     <div class="membership-row">
-                        <div class="membership-tier">
+                        <div class="membership-tier" data-price="29.99">
                             <img src="../images/teir1.jpg" alt="Basic Membership">
                             <h2>Basic Membership</h2>
                             <ul>
@@ -58,7 +47,7 @@
                             </ul>
                             <div class="price">$29.99/month</div>
                         </div>
-                        <div class="membership-tier">
+                        <div class="membership-tier" data-price="49.99">
                             <img src="../images/teir2.jpg" alt="Premium Membership">
                             <h2>Premium Membership</h2>
                             <ul>
@@ -69,7 +58,7 @@
                             </ul>
                             <div class="price">$49.99/month</div>
                         </div>
-                        <div class="membership-tier">
+                        <div class="membership-tier" data-price="79.99">
                             <img src="../images/teir3.jpg" alt="VIP Membership">
                             <h2>VIP Membership</h2>
                             <ul>

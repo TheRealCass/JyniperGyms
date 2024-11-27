@@ -228,3 +228,27 @@ if (typeof CryptoJS === 'undefined') {
     }
 
 })(jQuery);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    const billingCycleButton = document.getElementById('billing-cycle-btn');
+    const membershipTiers = document.querySelectorAll('.membership-tier');
+    const billingCycleMultipliers = {
+        weekly: 1 / 4,
+        monthly: 1,
+        yearly: 12
+    };
+
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function () {
+            const selectedCycle = this.id;
+            billingCycleButton.textContent = this.textContent;
+
+            membershipTiers.forEach(tier => {
+                const basePrice = parseFloat(tier.getAttribute('data-price'));
+                const newPrice = (basePrice * billingCycleMultipliers[selectedCycle]).toFixed(2);
+                tier.querySelector('.price').textContent = `$${newPrice}/${selectedCycle}`;
+            });
+        });
+    });
+});
