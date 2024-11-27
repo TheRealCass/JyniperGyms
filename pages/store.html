@@ -220,6 +220,45 @@
                             </div>
                         </div>
 
+                        <div class="item">
+                            <div class="card product-card">
+                                <div class="card-body pb-0">
+                                    <span class="text-secondary">WHEY Protein</span>
+                                    <a href="protein2.html">
+                                        <p class="text-primary mb-0">Milk Chocolate WHEY Protein</p>
+                                    </a>
+                                </div>
+                                <div class="product-image">
+                                    <img src="../images/product-images/protein2.jpg" class="card-img-top" alt="Milk Chocolate Whey Protein">
+                                </div>
+                                <div class="card-body py-1">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5 class="text-danger m-0">$350</h5>
+                                            <small class="text-secondary"><del>800</del></small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="d-flex align-items-center">
+                                                <div class="input-group input-group-sm me-2"
+                                                    style="width: 100px;display: none;">
+                                                    <button class="btn btn-outline-secondary" type="button"
+                                                        onclick="updateQuantity('product-5', -1)">-</button>
+                                                    <input type="number" class="form-control text-center" id="product-4"
+                                                        value="5" min="1" max="99" readonly>
+                                                    <button class="btn btn-outline-secondary" type="button"
+                                                        onclick="updateQuantity('product-5', 1)">+</button>
+                                                </div>
+                                                <button class="btn btn-secondary btn-circle"
+                                                    onclick="addToCart(5, 'Milk Chocolate Whey Protein', 350, '../images/product-images/protein2.jpg', 'product-5')">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Additional product cards here -->
                     </div>
                 </div>
