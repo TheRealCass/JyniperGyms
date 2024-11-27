@@ -261,17 +261,23 @@
     <script>
         // Product Images
         const productImages = [
-            '../images/product1.jpg',
-            '../images/product1a.jpg',
-            '../images/product1b.jpg'
+        '../images/product-images/protein1.jpg',
+        '../images/product-images/protein1a.jpg',
+        '../images/product-images/protein1b.jpg'
         ];
 
         function changeImage(index) {
-            document.getElementById('mainImage').src = productImages[index];
-            document.querySelectorAll('.thumbnail').forEach((thumb, i) => {
-                thumb.classList.toggle('active', i === index);
-            });
+            // Check if the index is within the range of productImages array
+            if (index >= 0 && index < productImages.length) {
+                document.getElementById('mainImage').src = productImages[index];
+                document.querySelectorAll('.thumbnail').forEach((thumb, i) => {
+                    thumb.classList.toggle('active', i === index);
+                });
+            } else {
+                console.error('Index out of range for productImages array');
+            }
         }
+
 
         // Quantity Input
         function updateQuantity(change) {
