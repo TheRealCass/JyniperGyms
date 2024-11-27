@@ -346,6 +346,12 @@ iframe {
   background: #333333;
 }
 
+.login100-form-btn.active {
+  background: #1b1bc4; /* Even darker shade for active effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reduce shadow for pressed effect */
+  transform: translateY(2px); /* Slightly move the button down */
+}
+
 
 
 /*------------------------------------------------------------------
