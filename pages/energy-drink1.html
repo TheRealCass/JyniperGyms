@@ -81,12 +81,12 @@
                 <div class="row">
                     <!-- Product Images -->
                     <div class="col-md-6">
-                        <img id="mainImage" src="../images/product-images/protein1.jpg" alt="Product"
+                        <img id="mainImage" src="../images/product-images/energy-drink1.jpg" alt="Product"
                             class="img-fluid product-image mb-3">
                         <div class="d-flex gap-2">
-                            <img src="../images/product-images/protein1.jpg" class="thumbnail active" onclick="changeImage(0)">
-                            <img src="../images/product-images/protein1a.jpg" class="thumbnail" onclick="changeImage(1)">
-                            <img src="../images/product-images/protein1b.jpg" class="thumbnail" onclick="changeImage(2)">
+                            <img src="../images/product-images/energy-drink1.jpg" class="thumbnail active" onclick="changeImage(0)">
+                            <img src="../images/product-images/energy-drink1a.jpg" class="thumbnail" onclick="changeImage(1)">
+                            <img src="../images/product-images/energy-drink1b.jpg" class="thumbnail" onclick="changeImage(2)">
                         </div>
                     </div>
 
@@ -96,17 +96,17 @@
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                 <li class="breadcrumb-item"><a href="store.html">Store</a></li>
-                                <li class="breadcrumb-item active">Premium Whey Protein</li>
+                                <li class="breadcrumb-item active">/ Redbull Energy Drink</li>
                             </ol>
                         </nav>
 
-                        <h1 class="mb-3">Premium Whey Protein</h1>
-                        <p class="text-secondary mb-2">Category: Protein</p>
+                        <h1 class="mb-3">Redbull Energy Drink</h1>
+                        <p class="text-secondary mb-2">Category: Energy Drink</p>
 
                         <div class="mb-3">
-                            <span class="h3 text-danger me-2">$49.99</span>
-                            <del class="text-secondary">$69.99</del>
-                            <span class="badge bg-success ms-2">29% OFF</span>
+                            <span class="h3 text-danger me-2">$5.55</span>
+                            <del class="text-secondary">$8.97</del>
+                            <span class="badge bg-success ms-2">10% OFF</span>
                         </div>
 
                         <div class="mb-4">
@@ -140,8 +140,8 @@
 
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="description">
-                                <p>High-quality whey protein shake designed to support muscle recovery and growth. Each
-                                    serving provides 24g of protein with essential amino acids.</p>
+                                <p>Unleash your full potential with Red Bull Energy Drink, the world’s #1 energy drink. Designed for those who seek focus, stamina, and a refreshing boost, Red Bull is your perfect companion, 
+                                    whether you’re chasing deadlines, crushing workouts, or simply powering through your day.</p>
                                 <ul>
                                     <li>24g protein per serving</li>
                                     <li>Low in sugar and fat</li>
@@ -261,9 +261,9 @@
     <script>
         // Product Images
         const productImages = [
-        '../images/product-images/protein1.jpg',
-        '../images/product-images/protein1a.jpg',
-        '../images/product-images/protein1b.jpg'
+        '../images/product-images/energy-drink1.jpg',
+        '../images/product-images/energy-drink1a.jpg',
+        '../images/product-images/energy-drink1b.jpg'
         ];
 
         function changeImage(index) {
@@ -294,10 +294,10 @@
         function addToCart() {
             const quantity = parseInt(document.getElementById('quantity').value);
             const product = {
-                id: 1,
-                name: 'Premium Whey Protein',
-                price: 49.99,
-                image: '../images/product-images/protein1.jpg',
+                id: 3,
+                name: 'Redbull Energy Drink',
+                price: 5.55,
+                image: '../images/product-images/energy-drink1.jpg',
                 quantity: quantity
             };
 
