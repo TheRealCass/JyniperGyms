@@ -1,5 +1,5 @@
 To run the website, open and extract the zip folder,
-go to pages and click and open index.html. 
+go to the "pages" folder and click and open index.html. 
 
 Note: 
 - We are using some animations from bootstrap and lottie that may or may
