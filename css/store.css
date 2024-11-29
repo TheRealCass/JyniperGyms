@@ -75,7 +75,7 @@
     transition: 0.3s;
   }
   .nav_link:hover {
-    color: white;
+    color: grey;
   }
   .nav_icon {
     font-size: 1.25rem;
