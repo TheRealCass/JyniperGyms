@@ -65,7 +65,7 @@
 
                     
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn" onclick="window.location.href='registration2.html';return false;">
+                        <button class="login100-form-btn" onclick="return validateForm();">
                             Next
                         </button>
                     </div>
@@ -91,6 +91,49 @@
                 loop: true,
                 autoplay: true,
                 path: '../vendor/lottie/registration.json'
+            });
+        });
+
+        // Validation functions similar to those in your login page
+        function validateForm() {
+            var valid = true;
+
+            $('.validate-input .input100').each(function() {
+                if (validate(this) === false) {
+                    showValidate(this);
+                    valid = false;
+                }
+            });
+
+            if (valid) {
+                window.location.href = 'registration2.html';
+            }
+
+            return false;
+        }
+
+        function validate(input) {
+            if ($(input).attr('name') === 'fullname' || $(input).attr('name') === 'age' || $(input).attr('name') === 'address' || $(input).attr('name') === 'weight') {
+                if ($(input).val().trim() === '') {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function showValidate(input) {
+            var thisAlert = $(input).parent();
+            $(thisAlert).addClass('alert-validate');
+        }
+
+        function hideValidate(input) {
+            var thisAlert = $(input).parent();
+            $(thisAlert).removeClass('alert-validate');
+        }
+
+        $('.validate-form .input100').each(function(){
+            $(this).focus(function(){
+               hideValidate(this);
             });
         });
     </script>

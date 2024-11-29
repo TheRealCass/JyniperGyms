@@ -67,11 +67,12 @@ if (typeof CryptoJS === 'undefined') {
         return hashedPassword === storedHash;
     }
 
+    // Select all input fields with class 'input100' in elements with class 'validate-input'
     var input = $('.validate-input .input100');
 
     // Form submission handler
     $('.validate-form').on('submit', function (e) {
-        e.preventDefault();
+        e.preventDefault(); // Prevent default form submission behavior
         var check = true;
 
         // Validate all inputs
@@ -95,7 +96,7 @@ if (typeof CryptoJS === 'undefined') {
             }
         }
 
-        return false;
+        return false; // Prevent default form submission
     });
 
     /**
@@ -229,6 +230,7 @@ if (typeof CryptoJS === 'undefined') {
 
 })(jQuery);
 
+// Run code once the document is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
     const dropdownItems = document.querySelectorAll('.dropdown-item');
     const billingCycleButton = document.getElementById('billing-cycle-btn');
@@ -239,11 +241,13 @@ document.addEventListener('DOMContentLoaded', function () {
         yearly: 12
     };
 
+    // Add event listener to each dropdown item
     dropdownItems.forEach(item => {
         item.addEventListener('click', function () {
             const selectedCycle = this.id;
             billingCycleButton.textContent = this.textContent;
 
+            // Update membership tier prices based on selected billing cycle
             membershipTiers.forEach(tier => {
                 const basePrice = parseFloat(tier.getAttribute('data-price'));
                 const newPrice = (basePrice * billingCycleMultipliers[selectedCycle]).toFixed(2);

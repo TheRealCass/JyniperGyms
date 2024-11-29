@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Register - Step 1</title>
+    <title>Register - Step 3</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="../images/icons/favicon.svg" />
@@ -14,24 +14,17 @@
     <div class="limiter">
         
         <div class="container-login100">
-
-            
             <div class="wrap-login100-2">
-
                 <div class="row">
                     <a class="back-to-homepage-button" href="registration2.html"> &#9668 <u>Back to Step 2</u></a>
-
-                    
-                    <div class="login100-pic lottie-container" id="lottie-animation" data-tilt>
-                    </div>
+                    <div class="login100-pic lottie-container" id="lottie-animation" data-tilt></div>
                 </div>
                 
                 <form class="login100-form validate-form">
-                
-                    <span class="login100-form-title">Step 3: Contact Info </span>
+                    <span class="login100-form-title">Step 3: Contact Info</span>
 
                     <div class="wrap-input100 validate-input" data-validate="Phone number is required">
-                        <input class="input100" type="text" name="phone" placeholder="Phone Number">
+                        <input class="input100" type="tel" name="phone" placeholder="Phone Number">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-phone" aria-hidden="true"></i>
@@ -47,27 +40,21 @@
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate="Emergency contact is required">
-                        <input class="input100" type="text" name="emergency_contact" placeholder="Emergency Contact">
+                        <input class="input100" type="tel" name="emergency_contact" placeholder="Emergency Contact">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-address-book" aria-hidden="true"></i>
                         </span>
                     </div>
 
-
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn" onclick="window.location.href='registration4.html';return false;">
+                        <button class="login100-form-btn" onclick="return validateAndProceed();">
                             Next
                         </button>
                     </div>
                 </form>
-                
             </div>
-
-            
         </div>
-
-        
     </div>
 
     <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -82,6 +69,47 @@
                 loop: true,
                 autoplay: true,
                 path: '../vendor/lottie/register.json'
+            });
+        });
+
+        function validateAndProceed() {
+            var valid = true;
+            $('.validate-input .input100').each(function() {
+                if (validate(this) === false) {
+                    showValidate(this);
+                    valid = false;
+                }
+            });
+
+            if (valid) {
+                window.location.href = 'registration4.html'; // Update with your next step URL
+            }
+
+            return false; // Prevent default form submission
+        }
+
+        function validate(input) {
+            if ($(input).attr('name') === 'phone' || $(input).attr('name') === 'email' || $(input).attr('name') === 'emergency_contact') {
+                if ($(input).val().trim() === '') {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function showValidate(input) {
+            var thisAlert = $(input).parent();
+            $(thisAlert).addClass('alert-validate');
+        }
+
+        function hideValidate(input) {
+            var thisAlert = $(input).parent();
+            $(thisAlert).removeClass('alert-validate');
+        }
+
+        $('.validate-form .input100').each(function(){
+            $(this).focus(function(){
+                hideValidate(this);
             });
         });
     </script>
