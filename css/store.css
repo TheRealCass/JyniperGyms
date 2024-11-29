@@ -211,3 +211,19 @@
     align-items: center;
     justify-content: center;
   }
+
+  .top-banner {
+    background-color: #FF6347; /* Tomato red background */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    padding: 10px 0; /* Vertical padding */
+    position: fixed; /* Fixed position */
+    width: 100%; /* Full width */
+    height: 50px;
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+body {
+    padding-top: 60px; /* Adjust padding to account for the fixed banner */
+}
