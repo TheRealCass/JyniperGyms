@@ -21,7 +21,14 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100-2">
+
+
+
 				<div class="row">
+
+
+
+
 					<div class="col-8">
 						<div>
 							<!-- <a class="top-left-button" href="whoAreWe.html"> &#9668 <u>Who are We?</u></a> -->
@@ -59,10 +66,57 @@
 							</div>			
 						</form>
 					</div>
+
+
+
+					<div class="col-4">
+
+						<form class="testamony validate-form">
+							<span class="login100-form-title">
+								Testamonials
+							</span>
+
+							<div class = "testamonial-small-text">
+								<span class="txt1">Below, you will find several photographs graciously submitted by our valued customers.
+									These images showcase the condition and performance of our products after 
+									six or more months of regular use. Our customers' feedback and these visual 
+									testimonials provide an authentic glimpse into the durability, 
+									effectiveness, and satisfaction that our products deliver over an 
+									extended period. We appreciate our customers sharing their experiences 
+									and are proud to present these real-world results to you.
+								</span>
+							</div>
+							
+
+							
+
+
+							<div class="gif-container lottie-container" id="gif-animation" data-tilt>
+								<img id="gif-image" src="../images/beforeAfter3.jpg" alt="GIF" class="img-fluid">
+							</div>
+							<div class="arrow-container">
+								<span class="arrow" onclick="prevImage()">&#9664</span>
+								<span class="arrow" onclick="nextImage()">&#9654</span>
+							</div>
+
+									
+						</form>
+					</div>
+
+					
 				</div>
+
 			</div>
+
 		</div>
+
+		
 	</div>
+
+
+
+
+	
 
 	<!--===============================================================================================-->
 	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -85,6 +139,42 @@
 			});
 		});
 	</script>
+
+<script>
+	const images = [
+	'../images/beforeAfter3.jpg',
+	'../images/beforeAfter2.jpg',
+	'../images/beforeAfter1.jpg'
+
+	];
+	let currentIndex = 0;
+
+	function showImage(index) {
+		const imgElement = document.getElementById('gif-image');
+		imgElement.src = images[index];
+	}
+
+	function prevImage() {
+		currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+		showImage(currentIndex);
+	}
+
+	function nextImage() {
+		currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+		showImage(currentIndex);
+	}
+
+	document.addEventListener("DOMContentLoaded", function () {
+		lottie.loadAnimation({
+			container: document.getElementById('gif-animation'),
+			renderer: 'svg',
+			loop: true,
+			autoplay: true,
+			path: '../vendor/lottie/homepage.json'
+		});
+	});
+
+</script>
 
 </body>
 
