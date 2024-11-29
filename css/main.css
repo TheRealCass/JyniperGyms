@@ -497,7 +497,7 @@ iframe {
 
 /* Resize company logo */
 .account-logo-container img {
-  max-width: 80px;  /* Adjust the max-width as needed */
+  max-width: 50px;  /* Adjust the max-width as needed */
   margin-bottom: 40px;
   margin-left: 15px;
 }
