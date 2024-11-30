@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Why us?</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="../images/icons/favicon.svg" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100-2">
+
+
+
+				<div class="row">
+
+
+
+
+					<div class="col-8">
+						<div>
+							<!-- <a class="top-left-button" href="whoAreWe.html"> &#9668 <u>Who are We?</u></a> -->
+							<!-- <a class="top-right-button" href="locations.html"> &#9654 <u>Locations</u></a> -->
+							<a class="top-left-button" href=" ../index.html"> &#9668 <u> Back to Homepage</u></a>
+						</div>
+
+						<div class="login100-pic lottie-container" id="lottie-animation" data-tilt>
+						</div>
+
+
+					</div>
+
+					<div class="col-4">
+
+						<form class="login100-form validate-form">
+							<span class="login100-form-title">
+								Why Us?
+							</span>
+
+							<div class="text-center p-t-12">
+								<span class="txt1">
+									At Jyniper Gyms, we offer more than just a place to work out. We provide an
+									environment that inspires, motivates, and empowers you to achieve your fitness
+									goals. With state-of-the-art equipment, personalized training programs, and a
+									supportive community, we make sure every step of your journey is productive and
+									enjoyable. Choose us to take the first step toward a healthier and more confident
+									you!
+								</span>
+							</div>
+
+							<span class="login100-form-title">
+								Our Experience?
+							</span>
+
+							<div class="text-center p-t-12">
+								<span class="txt1">
+									With years of experience in the fitness industry, we’ve helped thousands of
+									individuals transform their lives. Our team of certified trainers and wellness
+									experts brings a wealth of knowledge and expertise to the table.
+								</span>
+							</div>
+						</form>
+					</div>
+
+
+
+					<div class="col-4">
+
+						<form class="testamony validate-form">
+							<span class="login100-form-title">
+								Testamonials
+							</span>
+
+							<div class="testamonial-small-text">
+								<span class="txt1">Below, you will find several photographs graciously submitted by our
+									valued customers.
+									These images showcase the condition and performance of our products after
+									six or more months of regular use. Our customers' feedback and these visual
+									testimonials provide an authentic glimpse into the durability,
+									effectiveness, and satisfaction that our products deliver over an
+									extended period. We appreciate our customers sharing their experiences
+									and are proud to present these real-world results to you.
+								</span>
+							</div>
+
+
+
+
+
+							<div class="gif-container lottie-container" id="gif-animation" data-tilt>
+								<img id="gif-image" src="../images/beforeAfter3.jpg" alt="GIF" class="img-fluid">
+							</div>
+							<div class="arrow-container">
+								<span class="arrow" onclick="prevImage()">&#9664</span>
+								<span class="arrow" onclick="nextImage()">&#9654</span>
+							</div>
+
+
+						</form>
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+
+
+
+	<!--===============================================================================================-->
+	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/bootstrap/js/popper.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/lottie/lottie.js"></script>
+	<!--===============================================================================================-->
+	<script src="../js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			lottie.loadAnimation({
+				container: document.getElementById('lottie-animation'),
+				renderer: 'svg',
+				loop: true,
+				autoplay: true,
+				path: '../vendor/lottie/whyus.json'
+			});
+		});
+	</script>
+
+	<script>
+		const images = [
+			'../images/beforeAfter3.jpg',
+			'../images/beforeAfter2.jpg',
+			'../images/beforeAfter1.jpg'
+
+		];
+		let currentIndex = 0;
+
+		function showImage(index) {
+			const imgElement = document.getElementById('gif-image');
+			imgElement.src = images[index];
+		}
+
+		function prevImage() {
+			currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+			showImage(currentIndex);
+		}
+
+		function nextImage() {
+			currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+			showImage(currentIndex);
+		}
+
+		document.addEventListener("DOMContentLoaded", function () {
+			lottie.loadAnimation({
+				container: document.getElementById('gif-animation'),
+				renderer: 'svg',
+				loop: true,
+				autoplay: true,
+				path: '../vendor/lottie/homepage.json'
+			});
+		});
+
+	</script>
+
+</body>
+
+</html>
