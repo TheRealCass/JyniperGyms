@@ -167,7 +167,6 @@ function checkout() {
         alert('Your cart is empty!');
         return;
     }
-    alert('Proceeding to checkout...');
     window.location.href = '/pages/checkout.html';
 
 }
